@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Restaurante.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">INICIO</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ACERCA DE</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACTO</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Abierto de 9AM a 8PM</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">MEXICO<br>EN LA PIEL</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>MEXICO<br>EN LA PIEL</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">MIRA NUESTRO MENU</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Nuestro Menu</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Tacos');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Tacos</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Platillos');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Platillos tipicos</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Bebidas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bebidas</div>
+      </a>
+    </div>
+
+
+    <!-- menu de tacos -->
+
+    <div id="Tacos" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Taco de bistec</b> <span class="w3-right w3-tag w3-dark-grey w3-round">35.00$</span></h1>
+      <p class="w3-text-grey">Tortilla artesanal, Bistec de res, pico de gallo</p>
+      <hr>
+   
+      <h1><b>Taco de pastor</b> <span class="w3-right w3-tag w3-dark-grey w3-round">30.00$</span></h1>
+      <p class="w3-text-grey">Tortilla artesanal, pastor de cerdo, salsa roja</p>
+      <hr>
+      
+      <h1><b>Taco de Alambre</b> <span class="w3-right w3-tag w3-dark-grey w3-round">45.00$</span></h1>
+      <p class="w3-text-grey">Tortilla artesanal, monterrey jack, bistec de res</p>
+      <hr>
+
+      <h1><b>Taco de suadero</b> <span class="w3-right w3-tag w3-dark-grey w3-round">30.00$</span></h1>
+      <p class="w3-text-grey">Tortilla artesanal, suadero de res, salsa verde</p>
+      <hr>
+
+      <h1><b>Taco gobernador</b> <span class="w3-tag w3-red w3-round">Especial!</span><span class="w3-right w3-tag w3-dark-grey w3-round">55.00$</span></h1>
+      <p class="w3-text-grey">Tortilla de harina, camaron, bistec de res, monterrey jack</p>
+      <hr>
+
+      <h1><b>Taco de Ribeye Especial</b> <span class="w3-tag w3-grey w3-round">Nuevo</span><span class="w3-right w3-tag w3-dark-grey w3-round">120.00$</span></h1>
+      <p class="w3-text-grey">Tortilla artesanal, Trozos de Ribeye, chicharron de rybeye, tuetano </p>
+    </div>
+
+    <!-- Menu platillos tipicos -->
+
+    <div id="Platillos" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Pozole</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">180.00$</span></h1>
+      <p class="w3-text-grey">granos de maiz, carne de cerdo, repollo, rabanos</p>
+      <hr>
+   
+      <h1><b>Chile en nogada</b> <span class="w3-right w3-tag w3-dark-grey w3-round">210.00$</span></h1>
+      <p class="w3-text-grey">chile relleno, crema en nogada</p>
+      <hr>
+      
+      <h1><b>Mole</b> <span class="w3-right w3-tag w3-dark-grey w3-round">135.00$</span></h1>
+      <p class="w3-text-grey">mole, pollo, arroz a la mexicana, tortilla</p>
+      <hr>
+
+      <h1><b>Carnitas estilo michoacan</b> <span class="w3-right w3-tag w3-dark-grey w3-round">195.00$</span></h1>
+      <p class="w3-text-grey">carne de cerdo cocida en manteca y esencias como naranja, canela y especias</p>
+    </div>
+
+    
+    <!-- Menu Bebidas -->
+
+    <div id="Bebidas" class="w3-container menu w3-padding-32 w3-white">
+      
+   
+      <h1><b>Tejuino</b> <span class="w3-right w3-tag w3-dark-grey w3-round">35.00$</span></h1>
+      <p class="w3-text-grey">bebida preparada a base de masa fermentada y azucar</p>
+      <hr>
+      
+      <h1><b>Horchata</b> <span class="w3-right w3-tag w3-dark-grey w3-round">25.00$</span></h1>
+      <p class="w3-text-grey">Preparada a base de arroz, leche y azucar</p>
+      <hr>
+      
+      <h1><b>Jamaica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">22.00$</span></h1>
+      <p class="w3-text-grey">bebida a base de jamaica y azucar</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Acerca de </h1>
+    <p>“Somos apasionados amantes de nuestra tierra, México, y su rica cultura. Creemos que la cocina es una ventana a nuestra identidad y una forma maravillosa de dar a conocer las tradiciones, los sabores y la diversidad de nuestro país.”</p>
+    <p><strong>The Chef?</strong> sr. Ricardo Robles<img src="Images/jopopz-tallorin-Rny5u2JwahI-unsplash.jpg" style="width:100px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="Images/vishwas-katti-UrQ_BS9bLXQ-unsplash.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Horarios</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Lunes & Jueves cerramos</p>
+        <p>Miercoles 10.00 - 24.00</p>
+        <p>Martes 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Viernes 10:00 - 12:00</p>
+        <p>Sabado 10:00 - 23:00</p>
+        <p>Domingo Cerramos</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contactanos</h1>
+    <p>Busquenos o llame al 34412423182</p>
+    <p><span class="w3-tag">FYI!</span> Ofrecemos un servicio completo de catering para cualquier evento, grande o pequeño. Entendemos sus necesidades y prepararemos la comida para satisfacer los criterios más importantes, tanto el aspecto como el sabor.</p>
+    <p class="w3-xxlarge"><strong>Reserva</strong> una mesa para una ocacion especial, pide mas informacion o solo mandanos un mensaje</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="cuantas personas" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="fecha y hora" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje/ requerimiento especial" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">Enviar mensaje</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+</body>
+</html>
